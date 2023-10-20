@@ -12,7 +12,15 @@ allow_embedding: true
 name: Clone of Christmas Chatbot
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
 startup_form: Form1
-db_schema: {}
+db_schema:
+  table_1:
+    client: none
+    server: full
+    columns:
+    - name: Column1
+      admin_ui: {width: 200, order: 0}
+      type: string
+    title: Table 1
 secrets:
   api_token:
     value: {? '' : 0GlIGyYgSlpJywMMEc+Ghe0JjAdS39Uw7ClXHftd2JgrsAUJ53lMYwt3oAS7Xc2PYtvfJ08mS+TJXPdLv2P11xiMyzxYX9jrhEBIaj91KROv047JkanqHs/PX58rKoX/mIq3nGO2LWC0j2XCrNQzv55sCW9OzIOJcmUMKSN41aqWo1Et}
