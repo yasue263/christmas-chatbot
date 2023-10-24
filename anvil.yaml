@@ -10,7 +10,12 @@ services:
 package_name: Christmas_Chatbot
 allow_embedding: true
 name: Clone of Christmas Chatbot
-runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
+runtime_options:
+  version: 2
+  client_version: '3'
+  server_version: python3-sandbox
+  server_spec: {base: python310-standard}
+  server_spec_disabled: {requirements: '', base: python310-minimal}
 startup_form: Form1
 db_schema:
   table_1:

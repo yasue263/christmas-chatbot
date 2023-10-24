@@ -10,6 +10,7 @@ headers = {"Authorization": f"Bearer {anvil.secrets.get_secret('api_token')}"}
 
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
+  # response = {"conversation":{"past_user_inputs":["test"], "generated_responses":["test"]}}
 	return response.json()
 
 @anvil.server.callable
