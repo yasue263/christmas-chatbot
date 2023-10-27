@@ -25,6 +25,9 @@ db_schema:
     - name: Column1
       admin_ui: {width: 200, order: 0}
       type: string
+    - name: Column2
+      admin_ui: {width: 200, order: 1}
+      type: number
     title: Table 1
 secrets:
   api_token:
